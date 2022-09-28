@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us </title>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Carlie van wyk"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css"/>
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <div> <a href="index.html" >Home </a></div>
+                <div> <a href="devices.html"> Devices </a></div>
+                <div> <a href="guide.html"> Guide </a></div>
+                <div class="current"> <a href="contact.html"> Contact Us</a></div>
+            </nav>
+        </header>
+
+        <main id="contact-main"> 
+            <p>
+                We would love to hear from you
+            </p>
+            <p>
+                Please use the form below to contact us with any questions or inquiries.
+            </p>
+
+            <form method="POST" action="#">
+                <fieldset>
+                    <legend> Get more info </legend>
+                    <input type="text" name="nameField" placeholder="Enter your name here" required>
+                    <br/>
+                    <br/>
+                    <input type="email" name="emailField" placeholder="Enter you email here" required>
+                    <br/>
+                    <br/>
+                    <textarea rows="8" cols="50" placeholder="Leave a message if you would like more information on the products..." name="textField"></textarea>
+                    <br/>
+                    <br/>
+                    <input id="submit" type="submit" name="submit">
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <p>  &copy; Fitness Track 2021 </p>
+        </footer>
+    </body>
+
+</html>

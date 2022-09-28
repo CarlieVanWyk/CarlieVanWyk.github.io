@@ -1,0 +1,919 @@
+/*Carlie van wyk*/
+
+/*__________________________________All pages_________________________________*/
+@font-face {
+    font-family: fit1;
+    src: url("fonts/ignite/Ignite/Ignite.otf");
+}
+@font-face {
+    font-family: fit2;
+    src: url("fonts/roboto/RobotoCondensed-Regular.ttf");
+}
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("../texture-images/4.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+header {
+    padding: 5px;
+    background-color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: fit1, Arial, Helvetica, sans-serif;
+    font-size: 150%;
+}
+
+nav div {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 2px;
+}
+
+nav div a {
+    text-decoration: none;
+    color: black;
+}
+
+nav div:hover {
+    background-color: #f1b5b5;
+}
+
+.current {
+    background-color: #f1b5b5;
+}
+
+.current a {
+    color: white;
+}
+
+footer {
+    font-family: fit2, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/*__________________________________________________Home _________________________________________*/
+@keyframes myAnimation {
+    from {transform:translateX(-100%); }
+    to {transform:translateX(0%);}
+}
+
+#home-main figure img {
+    width: 100%;
+    border-radius: 3em;
+    animation: myAnimation 3s;
+}
+
+#home-main figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-main {
+    margin-top: 8%;
+    padding: 0 8%;
+    display: flex;
+}
+
+#home-main div {
+    animation: myAnimation 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home-main #p1 {
+    font-weight: bolder;
+    font-size: 180%;
+    font-family: fit2, Arial, Helvetica, sans-serif;
+}
+
+#home-main #p2 {
+    font-family: fit2, Arial, Helvetica, sans-serif;
+    font-size: 110%;
+}
+
+/*_______________________________________________________Devices______________________________________*/
+#devices-main>p {
+    margin-top: 5%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 180%;
+    font-family: fit2, Arial, Helvetica, sans-serif;
+}
+#devices-main>div {
+    padding: 3% 0;
+}
+.devices {
+    margin: 0 10%;
+    border-radius: 3em;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    font-family: fit2, Arial, Helvetica, sans-serif;
+    font-size: 110%;
+}
+
+.devices:hover {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
+}
+
+#device1 img{
+    width: 80%;
+}
+#device1>div {
+    margin-left: 8%;
+}
+
+#device2 img {
+    width: 55%;
+    margin: 10px;
+}
+
+#device3 img {
+    width: 80%;
+}
+
+#device4 img {
+    width: 90%;
+    border-radius: 10em;
+    margin-top: 0;
+}
+#device4>div {
+    margin-left: 8%;
+}
+
+.devices figure {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2, p {
+    font-family: fit2, Arial, Helvetica, sans-serif;
+}
+
+#moreInfo article {
+    padding: 3% 25%;
+}
+
+#moreInfo article p {
+    column-count: 2;
+}
+
+
+#moreInfo #article1 {
+    background-color: hsl(0, 68%, 83%) ;
+}
+#moreInfo #article2 {
+    background-color: white ;
+}
+#moreInfo #article3 {
+    background-color: hsl(0, 68%, 83%) ;
+}
+#moreInfo #article4 {
+    background-color: white;
+}
+
+#moreInfo p {
+    font-size: 110%;
+    text-align:justify;
+}
+
+.learnMore {
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+    background-color: #db3a65;
+    border-radius: 1em;
+}
+.learnMore a {
+    text-decoration: none;
+    color: white;
+}
+
+/*_______________________________________________Guide_________________________________*/
+#guide-main>p:nth-child(1) {
+    margin: 5% 25% 0 25%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 180%;
+    font-family: fit2, Arial, Helvetica, sans-serif;
+}
+#guide-main>p:nth-child(2) {
+    margin: 1% 25% 5% 25%;
+    text-align: center;
+    font-size: 120%;
+    font-family: fit2, Arial, Helvetica, sans-serif;
+}
+
+#tip1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+}
+#tip1 .subject {
+    overflow: hidden;
+}
+#tip1 h2 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url("../device-images/general/11.jpg");
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 180%;
+    transition: transform 0.5s;
+}
+#tip1 h2:hover {
+    transform: scale(1.1, 1.1);
+}
+#tip1 .content {
+    margin: 0;
+    padding: 8%;
+    font-size: larger;
+    text-align: justify;
+}
+#tip1 .content b {
+    font-size: larger;
+}
+
+
+
+
+#tip2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+}
+#tip2 .subject {
+    overflow: hidden;
+}
+#tip2 h2 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url("../device-images/general/12.jpg");
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 180%;
+    transition: transform 0.5s;
+}
+#tip2 h2:hover {
+    transform: scale(1.1, 1.1);
+}
+#tip2 .content {
+    margin: 0;
+    padding: 8%;
+    font-size: larger;
+    text-align: justify;
+}
+#tip2 .content b {
+    font-size: larger;
+}
+
+
+
+
+#tip3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+}
+#tip3 .subject {
+    overflow: hidden;
+}
+#tip3 h2 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url("../device-images/general/15.jpg");
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 180%;
+    transition: transform 0.5s;
+}
+#tip3 h2:hover {
+    transform: scale(1.1, 1.1);
+}
+#tip3 .content {
+    margin: 0;
+    padding: 8%;
+    font-size: larger;
+    text-align: justify;
+}
+#tip3 .content b {
+    font-size: larger;
+}
+
+
+
+
+#tip4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+}
+#tip4 .subject {
+    overflow: hidden;
+}
+#tip4 h2 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url("../device-images/general/18.jpg");
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 180%;
+    transition: transform 0.5s;
+}
+#tip4 h2:hover {
+    transform: scale(1.1, 1.1);
+}
+#tip4 .content {
+    margin: 0;
+    padding: 8%;
+    font-size: larger;
+    text-align: justify;
+}
+#tip4 .content b {
+    font-size: larger;
+}
+
+
+
+#tip5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+}
+#tip5 .subject {
+    overflow: hidden;
+}
+#tip5 h2 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url("../device-images/general/16.jpg");
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 180%;
+    transition: transform 0.5s;
+}
+#tip5 h2:hover {
+    transform: scale(1.1, 1.1);
+}
+#tip5 .content {
+    margin: 0;
+    padding: 8%;
+    font-size: larger;
+    text-align: justify;
+}
+#tip5 .content b {
+    font-size: larger;
+}
+
+
+
+
+#tip6 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+}
+#tip6 .subject {
+    overflow: hidden;
+}
+#tip6 h2 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url("../device-images/general/17.jpg");
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 180%;
+    transition: transform 0.5s;
+}
+#tip6 h2:hover {
+    transform: scale(1.1, 1.1);
+}
+#tip6 .content {
+    margin: 0;
+    padding: 8%;
+    font-size: larger;
+    text-align: justify;
+}
+#tip6 .content b {
+    font-size: larger;
+}
+
+
+
+#tip7 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+}
+#tip7 .subject {
+    overflow: hidden;
+}
+#tip7 h2 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),  url("../device-images/general/20.jpg");
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 180%;
+    transition: transform 0.5s;
+}
+#tip7 h2:hover {
+    transform: scale(1.1, 1.1);
+}
+#tip7 .content {
+    margin: 0;
+    padding: 8%;
+    font-size: larger;
+    text-align: justify;
+}
+#tip7 .content b {
+    font-size: larger;
+}
+
+
+.top {
+    background-color: #db3a65;
+    padding: 10px;
+    font-size: larger;
+    margin: 0 49%;
+    border-radius: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+/*__________________________________________Contact_____________________________________*/
+#contact-main>p:nth-child(1) {
+    margin: 5% 25% 0 25%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 180%;
+    font-family: fit2, Arial, Helvetica, sans-serif;
+}
+#contact-main>p:nth-child(2) {
+    margin: 1% 25% 5% 25%;
+    text-align: center;
+    font-size: 120%;
+    font-family: fit2, Arial, Helvetica, sans-serif;
+}
+
+form {
+    margin: 0 25%;
+    text-align: center;
+}
+
+fieldset {
+    border-radius: 1em;
+    border: solid 2px black;
+}
+
+legend {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+input, textarea {
+    padding: 2%;
+    border-radius: 1em;
+    border: solid 2px black;
+}
+
+input {
+    width: 50%;
+}
+
+textarea {
+    width: 50%;
+}
+
+legend, input, textarea {
+    font-family: fit2, Arial, Helvetica, sans-serif;
+}
+
+#submit {
+    background-color: #db3a65;
+    color: white;
+    padding: 1%;
+    width: 100px;
+    font-size: larger;
+}
+
+
+
+/*____________________________________________media queries______________________________________*/
+@media (max-width: 1300px) {
+                                            /*Guide*/
+    #tip1 h2 {
+        background-size: 120%;
+    }
+
+    #tip3 h2 {
+        background-size: 130%;
+    }
+
+    #tip4 h2 {
+        background-size: 120%;
+    }
+
+    #tip7 h2 {
+        background-size: 120%;
+    }
+}
+
+@media (max-width: 1250px){
+                                              /*Devices*/
+    #device1 img{
+        width: 95%;
+        border-radius: 10em;
+    }
+
+    #device4 img {
+        width:100%;
+    }
+
+    #device2>div {
+        margin-left: 6%;
+    }
+
+    #device3>div {
+        margin-left: 6%;
+    }
+
+                                             /*Guide*/
+    #tip1 h2 {
+        background-size: 170%;
+    }
+    #tip3 h2 {
+        background-size: 180%;
+    }
+    #tip4 h2 {
+        background-size: 160%;
+    }
+    #tip7 h2 {
+        background-size: 150%;
+    }
+                                             /*Contact*/
+     input {
+        width: 80%;
+    }
+    
+    textarea {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    body {
+        background-size: 120%;
+    }
+                                               /*Home*/
+    #home-main {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    #home-main figure img  {
+        width: 80%;
+    }
+
+    #home-main div #p2 {
+        margin: 0;
+    }
+                                              /*Devices*/
+    .devices {
+        flex-direction: column;
+    }
+
+    .devices figure {
+        order: -1;
+    }
+
+    #device1 img {
+        width: 80%;
+    }
+
+    #device2 img {
+        width: 30%;
+    }
+
+    #device3 img {
+        width: 50%;
+    }
+
+    #device4 img {
+        width: 90%;
+    }
+                                              /*Guide*/
+    #guide-main article {
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(2, 1fr);
+    }
+    .subject {
+        grid-row: 1 / 2;
+    }
+    .content {
+        grid-row: 2 / 3;
+    }
+
+    #guide-main>p:nth-child(1) {
+        margin: 5% 15% 0 15%; 
+        
+    }
+    #guide-main>p:nth-child(2) {
+        margin: 1% 15% 5% 15%;
+    }
+                                            
+    #tip1 h2 {
+        background-size: 100%;
+    }
+    #tip3 h2 {
+        background-size: 100%;
+    }
+    #tip4 h2 {
+        background-size: 100%;
+    }
+    #tip7 h2 {
+        background-size: 100%;
+    }
+}
+                                              
+
+
+@media (max-width: 800px) {
+    body {
+        background-size: 150%;
+    }
+                                            /*Home*/
+    #home-main {
+        font-size: smaller;
+    }
+    #home-main div #p2 {
+        font-size: 120%;
+    }
+    #home-main figure img  {
+        width: 100%;
+    }
+                                              /*Devices*/
+    #moreInfo article p {
+        column-count: 1;
+    }
+    
+    #moreInfo article {
+        padding: 3% 15%;
+    }
+                                            /*Guide*/
+    #tip1 h2 {
+        background-size: 120%;
+    } 
+    
+    #tip3 h2 {
+         background-size: 130%;
+     }
+    
+    #tip4 h2 {
+        background-size: 120%;
+    }
+                                             /*Contact*/
+     #contact-main>p:nth-child(1) {
+        margin: 5% 10% 0 10%;
+        font-size: 150%;
+        
+    }
+    #contact-main>p:nth-child(2) {
+        margin: 1% 10% 5% 10%;
+        font-size: 100%;
+    }                                      
+    
+    input {
+        width: 80%;
+        padding: 5%;
+    }
+        
+    textarea {
+        width: 80%;
+        padding: 5%;
+    }
+
+    form {
+        margin: 0 10%;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        background-size: 180%;
+    }
+                                             /*Home*/
+    #home-main figure {
+        margin: 10% 0 0 0;
+    }
+
+    #home-main div #p2 {
+        margin: 15% 0;
+    }
+
+    #home-main figure img  {
+        width: 100%;
+        
+    }
+
+    #home-main div {
+        text-align: justify; 
+    }
+
+                                            /*Guide*/
+    #guide-main>p:nth-child(1) {
+        margin: 5% 10% 0 10%; 
+        font-size: 150%;
+    
+    }
+    #guide-main>p:nth-child(2) {
+        font-size: 110%;
+        margin: 1% 10% 5% 10%;
+    }
+
+    #guide-main article {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    #guide-main article h2 {
+        font-size: 150%;
+    }
+
+    #guide-main article p {
+        font-size: 90%;
+    }
+
+    #tip1 h2 {
+        background-size: 100%;
+    }
+    #tip3 h2 {
+        background-size: 100%;
+    }
+    #tip4 h2 {
+        background-size: 100%;
+    }
+    #tip7 h2 {
+        background-size: 100%;
+    }
+}
+
+@media (max-width: 530px) {
+    body {
+        background-size: 220%;
+    }
+
+    nav {
+        font-size: 120%;
+    }
+                                                       /*Home*/
+    #home-main div #p2 {
+        margin: 20% 0;
+    }
+
+    #home-main figure {
+        margin: 15% 0 0 0;
+    }
+                                              /*Devices*/
+    #devices-main>p {
+        font-size: 130%;
+    }
+    .devices {
+        font-size: smaller;
+    }
+    #device1 img {
+        width: 100%;
+    }
+    #device2 img {
+        width: 45%;
+    }
+    #device3 img {
+        width: 75%;
+    }
+    #device4 img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    body {
+        background-size: 250%;
+    }
+    nav div{
+        margin: 0;
+        padding: 5px;
+    }
+                                          /*Home*/
+    #home-main div #p1{
+        font-size: 150%;
+    }
+
+    #home-main figure {
+        margin: 40% 0 0 0;
+    }
+
+    #home-main div #p2 {
+        margin: 25% 0 5% 0;
+    }
+                                              /*Devices*/
+    #device1 img {
+        width: 100%;
+    }
+    #device2 img {
+        width: 45%;
+    }
+    #device3 img {
+        width: 75%;
+    }
+    #device4 img {
+        width: 100%;
+    }
+                                            /*Guide*/
+    #guide-main>p:nth-child(1) {
+        margin: 5% 5% 0 5%; 
+        font-size: 130%;
+        
+    }
+    #guide-main>p:nth-child(2) {
+        font-size: 90%;
+        margin: 1% 5% 5% 5%;
+    }
+    #guide-main article {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+    #guide-main article h2 {
+        font-size: 130%;
+        text-align: center;
+    }
+    #guide-main article p {
+        font-size: 90%;
+    }
+    #tip1 h2 {
+        background-size: 150%;
+    }
+    #tip3 h2 {
+        background-size: 150%;
+    }
+    #tip4 h2 {
+        background-size: 150%;
+    }
+    #tip7 h2 {
+        background-size: 130%;
+    }
+}
+
+@media (max-width: 380px) {
+    body {
+        background-size: 300%;
+    }
+
+                                                /*Guide*/
+    #tip3 h2 {
+        background-size: 170%;
+    }
+                                                
+}
